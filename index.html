@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+
+    body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  }
+
+  .container {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  }
+
+  h1 {
+  text-align: center;
+  }
+
+  h2 {
+  text-align: center;
+  color: #0475ee;
+  }
+
+  h3 {
+  text-align: center;
+  color: firebrick
+  }
+
+  h4 {
+  text-align: center;
+  }
+  form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+  label {
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.generated-text {
+  margin-top: 20px;
+  white-space: pre-line; 
+}
+footer {
+  position: absolute;
+  bottom: 0;
+}
+    </style>
+  <title>Bëlga Lorem Ipsum Generator</title>
+</head>
+<body>
+  <h1>Bëlga Lorem Ipsum Generator</h1>
+  <h2>Üdvözöllek! Ez egy kezdetleges lorem ipsum generátor, 
+    mely a zenekar néhány dalszövegéből szemezgetve generál egy 
+    random szöveget, amit placeholderként lehet használni.</h2>
+  <h3>Figyelem! 16 éven aluliak számára még nagykorú felügyeletével sem ajánlott weboldal!
+    A szövegek obszécek és sértőek, de viccesek, és pont ezért imádják oly sokan. 
+  </h3>
+  <h4>
+    Alább meg tudod adni, hogy hány "soros" legyen a szöveg, egy sor az eredeti dalszövegek
+     egy sora, pl. "Szólj anyádnak, a csigavért köpjed ki". 
+  </h4>
+  <form action="/generate" method="get">
+    <label for="length">Szöveg hossza (sorokban): </label>
+    <input type="number" id="length" name="length" min="1" value="100">
+    <button type="submit">Generálás</button>
+  </form>
+</body>
+<footer>
+  Készítette: Tóth Richárd
+  GitHub: RichardToth992
+</footer>
+</html>
